@@ -308,23 +308,6 @@ th,td{padding:7px 9px;text-align:left;border-bottom:1px solid #eef1f3} th{backgr
 .tkc{background:#fff;border-radius:12px;padding:10px 12px;box-shadow:0 1px 4px rgba(28,55,97,.08);border-top:4px solid var(--ils-teal)}
 .tkc b{display:block;font-size:24px;color:var(--ils-navy)} .tkc span{font-size:12px;color:#4a5568}
 .tkc.ok{border-top-color:#2e9e48}.tkc.warn{border-top-color:var(--warn)}.tkc.red{border-top-color:#d4111a}
-.arrbar{position:relative;height:24px;background:#e3e8ec;border-radius:12px;overflow:hidden;margin:8px 0 4px;display:flex}
-.arrbar.sm{height:20px}
-.arrbar i{display:block;height:100%}
-.arrbar span{position:absolute;inset:0;text-align:center;font-size:12px;font-weight:600;line-height:24px;color:#1c3761}
-.arrbar.sm span{line-height:20px;font-size:11.5px}
-.arrleg{display:flex;flex-wrap:wrap;gap:4px 10px;font-size:12px;color:#38485a;margin:4px 0}
-.arrleg b{font-weight:600}
-.arrdot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:middle}
-.arrh{font-size:12px;color:#38485a;margin-top:3px}
-.arrdays{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 10px}
-.arrdays button{border:1px solid #cfd8e0;background:#fff;border-radius:16px;padding:5px 12px;font-size:12.5px;cursor:pointer;color:#1c3761}
-.arrdays button.on{background:var(--celeste);border-color:#9cc9e6;font-weight:600}
-.arrhot{margin:12px 0 4px;font-weight:600;color:#1c3761}
-.arrt{width:100%;border-collapse:collapse;font-size:12.5px;background:#fff}
-.arrt th{background:#f2f5f8;text-align:left;padding:6px;font-weight:600;color:#38485a}
-.arrt td{padding:6px;border-top:1px solid #eef1f3;vertical-align:top}
-.arrst{display:inline-block;padding:2px 8px;border-radius:10px;font-size:11.5px;font-weight:500;white-space:nowrap}
 .tkbar{position:relative;height:24px;background:#e3e8ec;border-radius:12px;overflow:hidden;margin:10px 0 4px}
 .tkbar i{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,#3fd87c,#2aa98a)}
 .tkbar span{position:relative;display:block;text-align:center;font-size:12px;font-weight:600;line-height:24px;color:#1c3761}
@@ -368,6 +351,28 @@ details.vipd{background:#fffaf0;border:1px solid #f3d29b;border-radius:12px;padd
 details.vipd>summary{cursor:pointer;padding:10px 14px;font-weight:700;font-size:15px;color:#7a4b13}
 details.vipd[open]>summary{border-bottom:1px solid #f3d29b}details.vipd table{margin:8px;width:calc(100% - 16px)}
 .lint{margin:8px 14px 0;background:#f6f9fb;border-radius:8px;padding:8px}.lint .row{display:flex;gap:6px;margin:5px 0}.lint input{flex:1;min-width:0;padding:6px;border:1px solid #d6dde3;border-radius:6px;font:inherit;font-size:13px}
+/* facturación */
+.tbad{display:inline-block;min-width:18px;padding:0 5px;border-radius:9px;font-size:11px;color:#fff;margin-left:3px;line-height:18px;text-align:center}.tbad.red{background:#d4111a}.tbad.yel{background:#e8a200}
+.fsum{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+.fs{border:none;border-radius:12px;padding:10px;background:#fff;box-shadow:0 1px 4px rgba(28,55,97,.1);cursor:pointer;display:flex;flex-direction:column;align-items:center;font:inherit;color:var(--ils-navy)}
+.fs b{font-size:24px}.fs span{font-size:12px}.fs.red{border-top:4px solid #d4111a}.fs.yel{border-top:4px solid #e8a200}.fs.plz{border-top:4px solid var(--ils-teal)}.fs.ok{border-top:4px solid #2e9e48}.fs.on{box-shadow:0 0 0 2px var(--ils-navy)}
+.fbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:6px}.fbar input{flex:1;min-width:220px}.fbar input,.fbar select{padding:8px 10px;border:1px solid #d6dde3;border-radius:8px;font:inherit}
+.fdn{width:38px;padding:2px 4px;border:1px solid #d6dde3;border-radius:6px;text-align:center;font:inherit}
+.flist{display:flex;flex-direction:column;gap:10px;margin-top:10px}
+.frow{background:#fff;border-radius:12px;padding:12px 14px;box-shadow:0 1px 4px rgba(28,55,97,.08);border-left:6px solid #c7d0d6}
+.frow.red{border-left-color:#d4111a;background:#fff6f6}.frow.yel{border-left-color:#e8a200;background:#fffbea}.frow.ok{border-left-color:#2e9e48}.frow.plz{border-left-color:var(--ils-teal)}
+.fhd{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.fnm{font-size:14.5px}
+.fst{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:12px;white-space:nowrap;background:#eef1f3;color:#4a5568}
+.fst.red{background:#d4111a;color:#fff}.fst.yel{background:#ffd75a;color:#5a4300}.fst.ok{background:#d9f3e3;color:#1d6b3a}.fst.plz{background:var(--ils-mint);color:#0d3d2b}
+.fgr{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px;margin:8px 0}
+.ff{display:flex;flex-direction:column;gap:2px}.ff span{font-size:11.5px;color:var(--ils-slate);font-weight:600}.ff input{padding:7px 9px;border:1px solid #d6dde3;border-radius:8px;font:inherit;font-size:13.5px}
+.fchk{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:6px}.lbl2{font-size:12.5px;color:var(--ils-slate);font-weight:600}
+.fck{display:inline-flex;gap:6px;align-items:center;padding:5px 10px;border:1px solid #d6dde3;border-radius:16px;font-size:13px;cursor:pointer;background:#fff}
+.fck.on{background:#e6f6ef;border-color:var(--ils-teal);color:#0d3d2b;font-weight:600}.fck input{accent-color:var(--ils-green)}
+.fdate{padding:4px 8px;border:1px solid #d6dde3;border-radius:8px;font:inherit;font-size:13px}
+.fform{border-left:5px solid var(--ils-navy);margin:10px 0}.fform .ff{margin-top:6px}
+@media(max-width:640px){.fsum{grid-template-columns:repeat(2,1fr)}}
+.placeholder-box{background:#fff;border:2px dashed #c7d0d6;border-radius:12px;padding:26px;text-align:center;color:var(--ils-slate)}
 .upload{background:#fff;border-radius:12px;padding:18px;box-shadow:0 1px 4px rgba(28,55,97,.08)}
 .upload input[type=file]{margin:10px 0}
 .msg{font-size:13px;margin-top:10px}
@@ -411,6 +416,7 @@ details.vipd[open]>summary{border-bottom:1px solid #f3d29b}details.vipd table{ma
     <button data-t="ops">📋 Operaciones</button>
     <button data-t="cal">📆 Calendario equipo</button>
     <button data-t="apps">🧰 Apps y planillas</button>
+    <button data-t="fac">💲 Facturación</button>
     <button data-t="load">⬆️ Cargar operación</button>
   </nav>
   <main>
@@ -436,6 +442,10 @@ details.vipd[open]>summary{border-bottom:1px solid #f3d29b}details.vipd table{ma
     <section id="t-ops" class="hidden">
       <div id="ops-list"></div>
       <div id="ops-detail" class="hidden"></div>
+    </section>
+    <section id="t-fac" class="hidden">
+      <h2>💲 Facturación de operaciones</h2>
+      <div id="fac-box"></div>
     </section>
     <section id="t-cal" class="hidden">
       <h2>Calendario del equipo · Ventas y Tráfico</h2>
@@ -510,8 +520,9 @@ if(auth) auth.onAuthStateChanged(u => {
 document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.t)));
 function showTab(t){
   document.querySelectorAll("nav.tabs button").forEach(b => b.classList.toggle("active", b.dataset.t===t));
-  ["home","ops","cal","apps","load"].forEach(x => $("#t-"+x).classList.toggle("hidden", x!==t));
+  ["home","ops","cal","apps","fac","load"].forEach(x => $("#t-"+x).classList.toggle("hidden", x!==t));
   if(t==="ops") closeDetail();
+  if(t==="fac") renderFac();
 }
 
 
@@ -664,14 +675,16 @@ initPostitForm(); renderApps(); renderHomeLinks();
 let refs=[], VOY={}, CAL=null;
 function startApp(){
   stopApp();
-  const r1 = db.ref(ROOT+"/voyages"); r1.on("value", s => { VOY = s.val()||{}; watchTrackers(); watchArr(); renderOps(); if(CURRENT && VOY[CURRENT]) renderDetail(CURRENT); });
+  const r1 = db.ref(ROOT+"/voyages"); r1.on("value", s => { VOY = s.val()||{}; watchTrackers(); renderOps(); if(CURRENT && VOY[CURRENT]) renderDetail(CURRENT); });
   const r4 = db.ref(ROOT+"/ajustes"); r4.on("value", s => { AJ = s.val()||{}; if(CURRENT && VOY[CURRENT]){ renderOwner(CURRENT); renderAvisos(CURRENT); if(!FL_EDIT) renderFlights(CURRENT); if(!document.querySelector("#log-box .ledit") && !["cu-t","it-n","it-t","it-h","it-l"].includes(document.activeElement?.id)) renderLogistica(CURRENT); } else renderOps(); renderHomeAlerts(); });
   const r2 = db.ref(ROOT+"/calendario"); r2.on("value", s => { CAL = s.val(); renderCal(); if(!CURRENT) renderOps(); });
   const r3 = db.ref(ROOT+"/postits"); r3.on("value", s => { PI = s.val()||{}; renderPostits(); });
   const r5 = db.ref(ROOT+"/config"); r5.on("value", s => { CFG = s.val()||{}; if(CURRENT && VOY[CURRENT]) renderLogistica(CURRENT); });
-  refs=[r1,r2,r3,r4,r5]; showTab("home");
+  const r6 = db.ref(ROOT+"/facturacion"); r6.on("value", s => { const x = s.val()||{}; FAC = x.ops||{}; FCFG = Object.assign({amarillo:5, rojo:10}, x.cfg||{});
+    if(!$("#t-fac").classList.contains("hidden") && !(document.activeElement && document.activeElement.closest && document.activeElement.closest("#fac-box input:not([type=checkbox]):not([type=date])"))) renderFac(); else renderFacBadge(); });
+  refs=[r1,r2,r3,r4,r5,r6]; showTab("home");
 }
-function stopApp(){ refs.forEach(r=>r.off()); refs=[]; stopTrackers(); stopArr(); }
+function stopApp(){ refs.forEach(r=>r.off()); refs=[]; stopTrackers(); }
 
 
 /* =====================================================================
@@ -709,107 +722,6 @@ function watchTrackers(){
       return r;
     });
   });
-}
-/* =====================================================================
-   LLEGADAS AEROPUERTO EN VIVO (app Traslado Aeropuerto 2 / 3 barcos)
-   traslados_multi/_index/<VOYAGE> = {op, slot, ship}   (lo escribe la app v2+)
-   traslados_multi/<op>/passengers, transfers           (mismo Firebase)
-   ===================================================================== */
-let ARR = {}, arrIdx = {}, arrRefs = {}, arrIdxRef = null, ARRDAY = {};
-function arrVoy(v){ return String((v && v.code) || "").trim().toUpperCase().replace(/[.#$\[\]\/]/g,"_"); }
-function arrIsDeb(v){ return /desemb|debark|dsb/i.test(String((v && (v.op || v.tipo)) || "")); }
-function watchArr(){
-  if(PREVIEW){ if(window.__mockARR){ ARR = window.__mockARR.ops || {}; arrIdx = window.__mockARR.idx || {}; } return; }
-  if(!db) return;
-  if(!arrIdxRef){ arrIdxRef = db.ref("traslados_multi/_index"); arrIdxRef.on("value", s => { arrIdx = s.val() || {}; syncArrRefs(); onArr(); }, () => {}); }
-  syncArrRefs();
-}
-function syncArrRefs(){
-  if(PREVIEW || !db) return;
-  const want = new Set(Object.values(VOY).filter(v => !arrIsDeb(v)).map(v => (arrIdx[arrVoy(v)] || {}).op).filter(Boolean));
-  Object.keys(arrRefs).forEach(op => { if(!want.has(op)){ arrRefs[op].forEach(r => r.off()); delete arrRefs[op]; delete ARR[op]; } });
-  want.forEach(op => {
-    if(arrRefs[op]) return;
-    ARR[op] = ARR[op] || {};
-    arrRefs[op] = [["passengers","pax"],["transfers","tr"]].map(([p,f]) => {
-      const r = db.ref(`traslados_multi/${op}/${p}`);
-      r.on("value", s => { ARR[op][f] = s.val() || {}; onArr(); }, () => {});
-      return r;
-    });
-  });
-}
-function stopArr(){ Object.values(arrRefs).forEach(a => a.forEach(r => r.off())); arrRefs = {}; if(arrIdxRef){ arrIdxRef.off(); arrIdxRef = null; } }
-let arrTimer = null;
-function onArr(){ clearTimeout(arrTimer); arrTimer = setTimeout(() => { if(CURRENT && VOY[CURRENT]) renderArr(CURRENT); else renderOps(); }, 300); }
-
-function arrBlank(x){ const s = String(x||"").trim(); return !s || /^(n\.?\s?\/?\s?a\.?|-+|\?+|none|tbc|tba|on[\s\-]*own|own\s*arrangement|por\s*su\s*cuenta)$/i.test(s); }
-function arrHasFlight(p){ return !arrBlank(p.flightNumber) || (!arrBlank(p.airCode) && /\d/.test(String(p.airCode||""))); }
-function arrDMY(s){ const m = String(s||"").trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/); if(!m) return ""; const y = m[3].length === 2 ? "20"+m[3] : m[3]; return `${y}-${m[2].padStart(2,"0")}-${m[1].padStart(2,"0")}`; }
-function arrDay(p){ if(p.manualDayDate) return arrDMY(p.manualDayDate); if(p.dateInherited && !arrHasFlight(p)) return ""; return arrDMY(p.arrivingDate); }
-function arrHotel(p){
-  const b = String(p.hotelName||"").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"").replace(/^\d+\s*n\s*(pre|post)?\s*/,"").trim();
-  if(b.includes("ritz")) return "Ritz-Carlton"; if(b.includes("mandarin")) return "Mandarin Oriental";
-  if(b.includes("hilton")) return "Hilton Garden Inn"; if(/^w\b|w santiago/.test(b)) return "W Santiago";
-  return p.hotelName || "Sin hotel";
-}
-function arrTime(p){ const m = String(p.arrivingTime||"").match(/(\d{1,2}):(\d{2})\s*(am|pm)?/i); if(!m) return ""; let h = +m[1]; if(m[3]){ if(/pm/i.test(m[3]) && h < 12) h += 12; if(/am/i.test(m[3]) && h === 12) h = 0; } return String(h).padStart(2,"0") + ":" + m[2]; }
-function arrFlight(p){ return [p.airCode, p.flightNumber].filter(x => !arrBlank(x)).join(" ") || "—"; }
-function todayISO(){ return new Date().toLocaleDateString("en-CA", {timeZone:"America/Santiago"}); }
-const ARRG = {hotel:["Llegó al hotel","#2e9e48","🏨"], viaje:["En camino al hotel","#2a8a9a","🚐"], apto:["En el aeropuerto","#e8963c","🧍"], pend:["Por llegar","#9aa6b2","⏳"], otro:["Otros","#8e44ad","•"]};
-const ARRST = {en_hotel:["hotel","🏨 Llegó al hotel"], en_viaje:["viaje","🚐 En camino al hotel"], asignado:["apto","🚐 Asignado a transfer"], chequeado:["apto","✅ Chequeado en sala"], en_camino:["apto","🚶 En camino a parking"], esperado:["pend","⏳ Por llegar"], asistido_oficial:["otro","🛫 Asistido a transfer oficial"], cancelado:["otro","❌ Canceló / no llegó"], por_su_cuenta:["otro","🚶 Se fue por su cuenta"]};
-function arrGroup(p){ return (ARRST[p.status] || ARRST.esperado)[0]; }
-function arrList(v){
-  if(!v || arrIsDeb(v)) return null;
-  const ix = arrIdx[arrVoy(v)]; if(!ix) return null;
-  const d = ARR[ix.op];
-  if(!d || !d.pax) return {ix, L:[], tr:{}, loading: !d || d.pax === undefined};
-  const vc = arrVoy(v);
-  const L = Object.entries(d.pax).map(([k,p]) => Object.assign({_k:k}, p))
-    .filter(p => (String(p.voyage||"").toUpperCase() === vc || (!p.voyage && p.shipSlot === ix.slot))
-      && (arrHasFlight(p) || p.manual || p.manualDayDate || (p.status && p.status !== "esperado")) && arrDay(p));
-  return {ix, L, tr: d.tr || {}};
-}
-function arrCount(D){ const s = {n:D.length, hotel:0, viaje:0, apto:0, pend:0, otro:0}; D.forEach(p => s[arrGroup(p)]++); return s; }
-function arrPickDay(days, pref){ const t = todayISO(); if(pref && days.includes(pref)) return pref; return days.includes(t) ? t : (days.find(x => x > t) || days[days.length-1]); }
-function arrBar(s, sm){
-  const n = Math.max(1, s.n), seg = ["hotel","viaje","apto","otro"].map(g => s[g] ? `<i style="width:${s[g]/n*100}%;background:${ARRG[g][1]}"></i>` : "").join("");
-  return `<div class="arrbar${sm?" sm":""}">${seg}<span>${s.hotel}/${s.n} en el hotel</span></div>`;
-}
-function arrLegend(s){ return `<div class="arrleg">${["hotel","viaje","apto","pend","otro"].filter(g => s[g]).map(g => `<span><span class="arrdot" style="background:${ARRG[g][1]}"></span>${ARRG[g][0]} <b>${s[g]}</b></span>`).join("")}</div>`; }
-function arrDayLabel(d){ return d === todayISO() ? "hoy " + dShort(d) : dShort(d); }
-function arrCardSec(v){
-  const A = arrList(v);
-  if(!A) return arrIsDeb(v) ? "" : `<div class="op-sec"><div class="lbl">✈️ Llegadas aeropuerto en vivo</div><div class="note">Aún no está cargado en la app Traslado Aeropuerto (voyage <b>${esc(v.code||"")}</b>).</div></div>`;
-  if(A.loading) return `<div class="op-sec"><div class="lbl">✈️ Llegadas aeropuerto en vivo</div><div class="note">Cargando…</div></div>`;
-  const days = [...new Set(A.L.map(arrDay))].sort();
-  if(!days.length) return `<div class="op-sec"><div class="lbl">✈️ Llegadas aeropuerto en vivo</div><div class="note">Sin llegadas con traslado cargadas.</div></div>`;
-  const d = arrPickDay(days), D = A.L.filter(p => arrDay(p) === d), s = arrCount(D);
-  const H = {}; D.forEach(p => { const h = arrHotel(p); (H[h] = H[h] || []).push(p); });
-  return `<div class="op-sec"><div class="lbl">✈️ Llegadas aeropuerto en vivo · ${esc(arrDayLabel(d))}</div>${arrBar(s, true)}${arrLegend(s)}
-    ${Object.keys(H).sort().map(h => `<div class="arrh">🏨 <b>${esc(h)}</b>: ${H[h].filter(p => arrGroup(p) === "hotel").length}/${H[h].length} llegaron</div>`).join("")}</div>`;
-}
-function renderArr(k){
-  const box = $("#arr-box"); if(!box) return;
-  const v = VOY[k], A = arrList(v);
-  if(!A){ box.innerHTML = `<div class="note">La app Traslado Aeropuerto todavía no tiene cargado el voyage <b>${esc(v && v.code || "")}</b>. Cuando el ejecutivo lo cargue (versión 2 o superior de la app), aquí aparece en vivo quién va llegando y a qué hotel va.</div>`; return; }
-  if(A.loading){ box.innerHTML = '<div class="note">Cargando…</div>'; return; }
-  const days = [...new Set(A.L.map(arrDay))].sort();
-  if(!days.length){ box.innerHTML = '<div class="note">La operación está cargada pero no tiene llegadas con traslado.</div>'; return; }
-  const d = arrPickDay(days, ARRDAY[k]); ARRDAY[k] = d;
-  const D = A.L.filter(p => arrDay(p) === d), s = arrCount(D);
-  const H = {}; D.forEach(p => { const h = arrHotel(p); (H[h] = H[h] || []).push(p); });
-  const trInfo = p => { const t = p.transferId && A.tr[p.transferId]; if(!t) return ""; return `<div class="note">${esc(t.vehicleType||"")}${t.plate?" · "+esc(t.plate):""}${t.driver?" · "+esc(t.driver):""}${t.departureTime?" · salió "+esc(t.departureTime):""}${t.arrivalTime?" · llegó "+esc(t.arrivalTime):""}</div>`; };
-  box.innerHTML = `<div class="note">En vivo desde la app Traslado Aeropuerto · operación <b>${esc(A.ix.op)}</b>. Solo pasajeros con traslado de llegada.</div>
-    <div class="arrdays">${days.map(x => { const c = arrCount(A.L.filter(p => arrDay(p) === x)); return `<button data-ad="${x}" class="${x===d?"on":""}">${esc(arrDayLabel(x))} · ${c.hotel}/${c.n}</button>`; }).join("")}</div>
-    ${arrBar(s)}${arrLegend(s)}
-    ${Object.keys(H).sort().map(h => { const P = H[h].sort((a,b) => (arrTime(a)||"99").localeCompare(arrTime(b)||"99") || String(a.lastName).localeCompare(String(b.lastName)));
-      return `<div class="arrhot">🏨 ${esc(h)} <span class="badge">${P.filter(p => arrGroup(p) === "hotel").length}/${P.length} llegaron</span></div>
-      <div style="overflow-x:auto"><table class="arrt"><tr><th>Hora</th><th>Vuelo</th><th>Pasajero</th><th>Booking</th><th>Estado</th></tr>${P.map(p => { const g = ARRG[arrGroup(p)], st = (ARRST[p.status] || ARRST.esperado)[1];
-        return `<tr><td><b>${esc(arrTime(p) || "—")}</b></td><td>${esc(arrFlight(p))}</td>
-          <td>${esc([p.firstName, p.lastName].filter(Boolean).join(" "))}${p.vipCount?` <span class="badge warn">⭐ VIP</span>`:""}${p.serviceType==="privado"?' <span class="badge navy">🚐 Privado</span>':""}${p.manual?' <span class="badge">manual</span>':""}${p.situacionComment?`<div class="note">💬 ${esc(p.situacionComment)}</div>`:""}</td>
-          <td>${esc(p.booking||"")}</td>
-          <td><span class="arrst" style="background:color-mix(in srgb,${g[1]} 18%,#fff);color:color-mix(in srgb,${g[1]} 80%,#1a1a1a)">${esc(st)}</span>${p.checkedTime?`<div class="note">sala ${esc(p.checkedTime)}${p.checkedBy?" · "+esc(p.checkedBy):""}</div>`:""}${trInfo(p)}</td></tr>`; }).join("")}</table></div>`; }).join("")}`;
-  box.querySelectorAll("[data-ad]").forEach(b => b.addEventListener("click", () => { ARRDAY[k] = b.dataset.ad; renderArr(k); }));
 }
 function stopTrackers(){ Object.values(trkRefs).forEach(a=>a.forEach(r=>r.off())); trkRefs = {}; }
 let trkTimer = null;
@@ -1159,7 +1071,6 @@ function opCard(v){
     ${ajOf(k).cuidado?.texto ? `<div class="lwarn" style="margin-top:8px">⚠️ <b>Cuidado:</b> ${esc(ajOf(k).cuidado.texto)}</div>` : ""}
     ${W.length ? `<div class="opw">${W.slice(0,2).map(w=>warnHtml(w,true)).join("")}${W.length>2?`<div class="note">+${W.length-2} aviso${W.length-2>1?"s":""} más</div>`:""}</div>` : ""}
     ${st ? `<div class="op-sec"><div class="lbl">🛎️ Pax Tracker en vivo</div><div class="tkbar sm"><i style="width:${Math.round(st.ent/Math.max(1,st.n)*100)}%"></i><span>${st.ent}/${st.n} chequeados · faltan ${st.falt}</span></div><div class="note">Visas OK ${st.vOk}/${st.vis} · ${st.claims.length} registros${st.open.length?` · <b style="color:#b3261e">${st.open.length} sin cerrar</b>`:""}</div></div>` : `<div class="op-sec"><div class="lbl">🛎️ Pax Tracker en vivo</div><div class="note">Aún no está cargado en el Pax Tracker (código <b>${esc(trkCode(v))}</b>). Aparece aquí apenas Hospitality lo cargue.</div></div>`}
-    ${arrCardSec(v)}
     <div class="op-sec"><div class="lbl">🛎️ Hospitality Desk · ${esc(v.hotel?.name||"")}</div>${desk||'<div class="note">Sin desk cargado</div>'}
       <div class="kv"><span>Salón</span><b>${esc(v.salon||"Por confirmar")}</b></div></div>
     <div class="op-sec"><div class="lbl">✈️ Vuelos</div><div>${fl}</div></div>
@@ -1304,7 +1215,6 @@ function renderDetail(k){
       <div class="pfil">${[["all","Todos"],["tr","Con traslado ILS"],["tbc","Vuelo TBC"],["own","On own"]].map(([k,l])=>`<button data-pf="${k}" class="${k==="all"?"on":""}">${l}</button>`).join("")}</div>
       <div class="note" id="pcount"></div><div id="pres"></div></div>`:""}
     <h2>🛎️ Pax Tracker en vivo <span class="badge">${esc(trkCode(v))}</span></h2><div id="trk-box"></div>
-    <h2>✈️ Llegadas aeropuerto en vivo</h2><div id="arr-box"></div>
     ${renderTraslados(v)}
     <h2>✈️ Vuelos chárter y buses</h2><div id="fl-box"></div>
     <h2>📅 Pax por día y Hospitality Desk</h2><div class="timeline">${days}</div>
@@ -1333,7 +1243,7 @@ function renderDetail(k){
     closeDetail(); renderOps();
   });
   if((v.pax||[]).length) initPax(v);
-  FL_EDIT = false; renderOwner(k); renderAvisos(k); renderFlights(k); renderTrk(k); renderArr(k); renderLogistica(k);
+  FL_EDIT = false; renderOwner(k); renderAvisos(k); renderFlights(k); renderTrk(k); renderLogistica(k);
 }
 
 /* ---------- buscador de pasajeros ---------- */
@@ -1472,6 +1382,151 @@ function openDay(k){
   });
 }
 
+
+/* ---------------- FACTURACIÓN ----------------
+   portal/facturacion/ops/{id} = {nop,nombre,ship,voyage,servicio,puerto,fecha,ejecutivo,prepay,saldo,po,notas,
+        stgo,yanguas,fv:{ok,por,ts}, revision:{ok,quien,por,ts}, enviado:{ok,fecha,por}}
+   portal/facturacion/cfg = {amarillo:días, rojo:días}  (días después de la operación sin enviar a Vero) */
+let FAC = {}, FCFG = {amarillo:5, rojo:10}, FQ = "", FEJ = "", FEST = "pend", FEDIT = null;
+const FSERV = [["stgo","Santiago Transfer"],["yanguas","Yanguas"],["fv","FV"]];
+function facDays(o){ if(!o.fecha) return null; const t = new Date(); t.setHours(0,0,0,0); return Math.round((t - new Date(o.fecha+"T00:00:00"))/86400000); }
+function facAll(o){ return FSERV.every(([k]) => o[k]?.ok); }
+function facState(o){
+  if(o.enviado?.ok) return {c:"ok", l:"✅ Enviada a Vero", r:0};
+  const d = facDays(o);
+  if(d === null) return {c:"", l:"Sin fecha", r:1};
+  if(d < 0) return {c:"fut", l:`Faltan ${-d} día${d===-1?"":"s"}`, r:1};
+  if(d >= (+FCFG.rojo||10)) return {c:"red", l:`🔴 Atrasada · ${d} días`, r:3};
+  if(d >= (+FCFG.amarillo||5)) return {c:"yel", l:`🟡 Por vencer · ${d} días`, r:2};
+  return {c:"plz", l:`En plazo · ${d} día${d===1?"":"s"}`, r:1};
+}
+function facPath(id, p){ return `${ROOT}/facturacion/ops/${id}${p?"/"+p:""}`; }
+async function facSet(id, p, val){
+  if(PREVIEW){ const o = FAC[id] = FAC[id]||{}; const parts = p.split("/"); let x = o; parts.slice(0,-1).forEach(q=>{ x = x[q] = x[q]||{}; }); x[parts[parts.length-1]] = val; renderFac(); return; }
+  await db.ref(facPath(id,p)).set(val);
+}
+function renderFacBadge(){
+  const n = Object.values(FAC).filter(o => facState(o).r === 3).length, y = Object.values(FAC).filter(o => facState(o).r === 2).length;
+  const b = document.querySelector('nav.tabs button[data-t="fac"]'); if(!b) return;
+  b.innerHTML = `💲 Facturación${n?` <span class="tbad red">${n}</span>`:""}${y?` <span class="tbad yel">${y}</span>`:""}`;
+}
+function renderFac(){
+  renderFacBadge();
+  const box = $("#fac-box"); if(!box) return;
+  const keep = document.activeElement && document.activeElement.id === "fac-q";
+  const all = Object.entries(FAC).map(([id,o]) => Object.assign({_id:id}, o));
+  const ejs = [...new Set(all.map(o=>o.ejecutivo).filter(Boolean))].sort();
+  const cnt = {red:0, yel:0, plz:0, ok:0};
+  all.forEach(o => { const s = facState(o); if(cnt[s.c] !== undefined) cnt[s.c]++; });
+  let L = all.filter(o => !FEJ || o.ejecutivo === FEJ);
+  const q = FQ.trim().toLowerCase();
+  if(q) L = L.filter(o => [o.nombre,o.voyage,o.prepay,o.po,o.ship,o.ejecutivo,o.nop].join(" ").toLowerCase().includes(q));
+  if(FEST === "pend") L = L.filter(o => !o.enviado?.ok && (facDays(o) ?? 0) >= -14);
+  if(FEST === "atr") L = L.filter(o => facState(o).r >= 2);
+  if(FEST === "env") L = L.filter(o => o.enviado?.ok);
+  L.sort((a,b) => FEST==="env" ? String(b.fecha).localeCompare(a.fecha) : (facState(b).r - facState(a).r) || String(a.fecha).localeCompare(b.fecha) || (a.nop||0)-(b.nop||0));
+  const chk = (o,k,l) => `<label class="fck ${o[k]?.ok?"on":""}" title="${o[k]?.ok?esc(shortName(o[k].por)+" · "+(o[k].ts||"")):"Marcar cuando esté ingresado"}"><input type="checkbox" data-fc="${o._id}" data-k="${k}" ${o[k]?.ok?"checked":""}> ${l}</label>`;
+  box.innerHTML = `
+    <div class="fsum">
+      <button class="fs red ${FEST==="atr"?"on":""}" data-fe="atr"><b>${cnt.red}</b><span>🔴 atrasadas</span></button>
+      <button class="fs yel ${FEST==="atr"?"on":""}" data-fe="atr"><b>${cnt.yel}</b><span>🟡 por vencer</span></button>
+      <button class="fs plz ${FEST==="pend"?"on":""}" data-fe="pend"><b>${cnt.plz}</b><span>en plazo</span></button>
+      <button class="fs ok ${FEST==="env"?"on":""}" data-fe="env"><b>${cnt.ok}</b><span>✅ enviadas a Vero</span></button>
+    </div>
+    <div class="fbar">
+      <input id="fac-q" placeholder="Buscar voyage, booking BCCR, PO, barco…" value="${esc(FQ)}">
+      <select id="fac-ej"><option value="">Todas las ejecutivas</option>${ejs.map(e=>`<option ${e===FEJ?"selected":""}>${esc(e)}</option>`).join("")}</select>
+      <select id="fac-est">${[["pend","Pendientes (hasta 2 semanas antes)"],["atr","Solo atrasadas / por vencer"],["env","Enviadas a Vero"],["all","Todas"]].map(([k,l])=>`<option value="${k}" ${k===FEST?"selected":""}>${l}</option>`).join("")}</select>
+      <button class="btn" id="fac-new">➕ Agregar a mano</button>
+    </div>
+    <div class="note">Semáforo según los días desde la fecha de la operación sin enviar a Vero: 🟡 desde <input class="fdn" id="fc-am" value="${esc(FCFG.amarillo)}"> días · 🔴 desde <input class="fdn" id="fc-ro" value="${esc(FCFG.rojo)}"> días.</div>
+    ${FEDIT ? facForm(FEDIT === "new" ? {} : Object.assign({_id:FEDIT}, FAC[FEDIT]||{})) : ""}
+    ${!all.length ? `<div class="placeholder-box"><b>Aún no hay operaciones en Facturación.</b><br>Carga el archivo <b>Facturacion 26-27.json</b> en "Cargar operación" (sale de la hoja ENCARGADOS) o agrégalas a mano.</div>` : ""}
+    <div class="flist">${L.map(o => { const s = facState(o), all3 = facAll(o); return `
+      <div class="frow ${s.c}">
+        <div class="fhd">
+          <div><b class="fnm">${o.nop?`<span class="badge navy">OP ${esc(o.nop)}</span> `:""}${esc(o.nombre || (o.ship+" "+o.voyage))}</b>
+            <div class="note">${esc(o.voyage||"")} · ${esc(o.servicio||"")} · ${esc(o.fecha?dShort(o.fecha):"sin fecha")} · 👩‍💼 ${esc(o.ejecutivo||"sin ejecutiva")}</div></div>
+          <span class="fst ${s.c}">${s.l}</span>
+        </div>
+        <div class="fgr">
+          <div class="ff"><span>Prepayment (booking)</span><input data-fv="${o._id}" data-k="prepay" value="${esc(o.prepay||"")}" placeholder="BCCR…"></div>
+          <div class="ff"><span>Saldo total</span><input data-fv="${o._id}" data-k="saldo" value="${esc(o.saldo||"")}" placeholder="USD …"></div>
+          <div class="ff"><span>N° PO (si corresponde)</span><input data-fv="${o._id}" data-k="po" value="${esc(o.po||"")}" placeholder="—"></div>
+        </div>
+        <div class="fchk">
+          <span class="lbl2">Servicios ingresados:</span>${FSERV.map(([k,l])=>chk(o,k,l)).join("")}
+          <span class="badge ${all3?"":"own"}">${all3?"✔ Todo ingresado":"Falta ingresar"}</span>
+        </div>
+        <div class="fchk">
+          <label class="fck ${o.revision?.ok?"on":""}" ${all3?"":'style="opacity:.55"'}><input type="checkbox" data-frev="${o._id}" ${o.revision?.ok?"checked":""}> 👀 Revisada con ${o.revision?.ok?`<b>${esc(o.revision.quien||"")}</b>`:"otra persona"}</label>
+          <label class="fck ${o.enviado?.ok?"on":""}"><input type="checkbox" data-fenv="${o._id}" ${o.enviado?.ok?"checked":""}> 📧 Enviada a Vero</label>
+          <input type="date" class="fdate" data-fdt="${o._id}" value="${esc(o.enviado?.fecha||"")}" title="Fecha de envío a Vero">
+          <button class="lnk" data-fed="${o._id}">✏️ editar datos</button>
+        </div>
+        ${o.notas?`<div class="note">📝 ${esc(o.notas)}</div>`:""}
+      </div>`; }).join("") || (all.length?'<div class="note">No hay operaciones con este filtro.</div>':"")}</div>`;
+  if(keep){ const i = $("#fac-q"); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }
+  $("#fac-q").addEventListener("input", e => { FQ = e.target.value; renderFac(); });
+  $("#fac-ej").addEventListener("change", e => { FEJ = e.target.value; renderFac(); });
+  $("#fac-est").addEventListener("change", e => { FEST = e.target.value; renderFac(); });
+  box.querySelectorAll("[data-fe]").forEach(b => b.addEventListener("click", () => { FEST = b.dataset.fe; renderFac(); }));
+  $("#fac-new").addEventListener("click", () => { FEDIT = "new"; renderFac(); });
+  const cfg = async () => { const v = {amarillo:+$("#fc-am").value||5, rojo:+$("#fc-ro").value||10}; if(PREVIEW){ FCFG = v; renderFac(); return; } await db.ref(`${ROOT}/facturacion/cfg`).set(v); };
+  $("#fc-am").addEventListener("change", cfg); $("#fc-ro").addEventListener("change", cfg);
+  box.querySelectorAll("[data-fv]").forEach(i => i.addEventListener("change", () => facSet(i.dataset.fv, i.dataset.k, i.value.trim())));
+  box.querySelectorAll("[data-fc]").forEach(i => i.addEventListener("change", () => facSet(i.dataset.fc, i.dataset.k, i.checked ? {ok:true, por:whoAmI(), ts:nowCL()} : null)));
+  box.querySelectorAll("[data-frev]").forEach(i => i.addEventListener("change", () => {
+    if(!i.checked) return facSet(i.dataset.frev, "revision", null);
+    const q = prompt("¿Con quién se revisó la facturación?", ""); if(q === null){ i.checked = false; return; }
+    facSet(i.dataset.frev, "revision", {ok:true, quien:q.trim(), por:whoAmI(), ts:nowCL()});
+  }));
+  const today = () => new Date().toLocaleDateString("sv-SE",{timeZone:"America/Santiago"});
+  box.querySelectorAll("[data-fenv]").forEach(i => i.addEventListener("change", () => { const id = i.dataset.fenv, o = FAC[id]||{};
+    facSet(id, "enviado", i.checked ? {ok:true, fecha:o.enviado?.fecha || today(), por:whoAmI()} : null); }));
+  box.querySelectorAll("[data-fdt]").forEach(i => i.addEventListener("change", () => { const id = i.dataset.fdt;
+    facSet(id, "enviado", i.value ? {ok:true, fecha:i.value, por:whoAmI()} : null); }));
+  box.querySelectorAll("[data-fed]").forEach(b => b.addEventListener("click", () => { FEDIT = b.dataset.fed; renderFac(); box.scrollIntoView({behavior:"smooth"}); }));
+  const fs = $("#ff-save"); if(fs) fs.addEventListener("click", async () => {
+    const g = id => $("#"+id).value.trim();
+    const base = {nop:+g("ff-nop")||null, nombre:g("ff-nombre"), ship:g("ff-ship"), voyage:g("ff-voy").toUpperCase(), servicio:g("ff-serv"), puerto:g("ff-pto").toUpperCase(),
+      fecha:g("ff-fecha"), ejecutivo:g("ff-ej"), prepay:g("ff-pre"), saldo:g("ff-sal"), po:g("ff-po"), notas:g("ff-not")};
+    if(!base.voyage && !base.nombre){ alertBox("Ingresa al menos el voyage o el nombre de la operación."); return; }
+    if(!base.nombre) base.nombre = `${base.ship} ${base.servicio} ${base.voyage}`.trim();
+    const id = FEDIT === "new" ? ("m" + Date.now()) : FEDIT; FEDIT = null;
+    if(PREVIEW){ FAC[id] = Object.assign(FAC[id]||{}, base, {manual: id.startsWith("m")}); renderFac(); return; }
+    await db.ref(facPath(id)).update(Object.assign(base, id.startsWith("m") ? {manual:true, creado_por:whoAmI()} : {}));
+  });
+  const fc = $("#ff-cancel"); if(fc) fc.addEventListener("click", () => { FEDIT = null; renderFac(); });
+  const fd = $("#ff-del"); if(fd) fd.addEventListener("click", async () => { const id = FEDIT; if(!confirm("¿Quitar esta operación de Facturación para todo el equipo?")) return; FEDIT = null;
+    if(PREVIEW){ delete FAC[id]; renderFac(); return; } await db.ref(facPath(id)).remove(); });
+}
+function facForm(o){
+  const f = (id,l,v,ph="",type="text") => `<div class="ff"><span>${l}</span><input id="${id}" type="${type}" value="${esc(v||"")}" placeholder="${esc(ph)}"></div>`;
+  const ejs = ["Carol Díaz","René Lira","Denise Bazán","Génesis Sepúlveda","Carol Salinas"];
+  return `<div class="fform card"><h3>${o._id ? "✏️ Editar datos de la operación" : "➕ Agregar operación a mano"}</h3>
+    <div class="fgr">${f("ff-nop","N° OP",o.nop,"Ej: 19")}${f("ff-voy","Voyage",o.voyage,"EV261125006")}${f("ff-serv","Servicio",o.servicio,"Embark / Debark / Embark only")}
+      ${f("ff-ship","Barco",o.ship,"Silver Endeavour")}${f("ff-pto","Puerto",o.puerto,"KGG")}${f("ff-fecha","Fecha de la operación",o.fecha,"","date")}
+      <div class="ff"><span>Ejecutiva a cargo</span><input id="ff-ej" list="ff-ejl" value="${esc(o.ejecutivo||"")}"><datalist id="ff-ejl">${ejs.map(e=>`<option>${e}</option>`).join("")}</datalist></div>
+      ${f("ff-pre","Prepayment (booking)",o.prepay,"BCCR…")}${f("ff-sal","Saldo total",o.saldo,"USD …")}${f("ff-po","N° PO",o.po,"si corresponde")}</div>
+    ${f("ff-nombre","Nombre de la operación",o.nombre,"SILVER ENDEAVOUR NOV 25 (EMBARK) KGG EV261125006")}
+    ${f("ff-not","Notas",o.notas,"Opcional")}
+    <div style="margin-top:8px"><button class="btn" id="ff-save">Guardar</button> <button class="btn sec" id="ff-cancel">Cancelar</button>${o._id?' <button class="lnk" id="ff-del" style="color:#b3261e">quitar de facturación</button>':""}</div></div>`;
+}
+async function loadFacturacion(v, msg){
+  const ops = v.ops || []; if(!ops.length) throw new Error("El archivo de facturación no trae operaciones.");
+  let nuevas = 0, act = 0;
+  const upd = {};
+  ops.forEach(o => { const id = "op" + o.nop; const cur = FAC[id];
+    const base = {nop:o.nop, nombre:o.nombre, ship:o.ship, voyage:o.voyage, servicio:o.servicio, puerto:o.puerto, fecha:o.fecha, ejecutivo:o.ejecutivo};
+    if(!cur || !cur.prepay) base.prepay = o.prepay;
+    if(cur) act++; else nuevas++;
+    upd[id] = base; });
+  if(PREVIEW){ Object.entries(upd).forEach(([id,b]) => FAC[id] = Object.assign(FAC[id]||{}, b)); renderFac(); msg.innerHTML = `👀 Facturación cargada solo en esta vista previa: ${nuevas} nuevas, ${act} actualizadas.`; return; }
+  for(const [id,b] of Object.entries(upd)) await db.ref(facPath(id)).update(b);
+  msg.innerHTML = `✅ Facturación: ${nuevas} operaciones nuevas y ${act} actualizadas. Los checks, saldos, PO y fechas de envío que ya estaban <b>no se tocaron</b>.`;
+}
+
 /* ---------------- CARGAR OPERACIÓN ---------------- */
 $("#do-load").addEventListener("click", async () => {
   const f = $("#file").files[0]; const msg = $("#load-msg");
@@ -1486,6 +1541,7 @@ $("#do-load").addEventListener("click", async () => {
       msg.innerHTML = "✅ Instructivo de capacitación publicado. Solo lo ven quienes entran con su correo y clave."; return;
     }
     const v = JSON.parse(txt);
+    if(v.type === "facturacion"){ await loadFacturacion(v, msg); return; }
     if(v.type === "calendario"){
       if(PREVIEW){ CAL = v; renderCal(); renderOps(); msg.innerHTML = "👀 Calendario cargado solo en esta vista previa. Míralo en la pestaña Calendario equipo."; return; }
       v.cargado_por = auth.currentUser?.email || ""; await db.ref(`${ROOT}/calendario`).set(v);
@@ -1502,7 +1558,7 @@ $("#do-load").addEventListener("click", async () => {
 });
 
 /* Para revisión local sin Firebase (no se usa en producción) */
-window.__portalPreview = (voy, cal) => { VOY = voy; CAL = cal; PREVIEW = true; watchArr(); $("#login-screen").classList.add("hidden"); $("#app").classList.remove("hidden"); renderOps(); renderCal(); };
+window.__portalPreview = (voy, cal) => { VOY = voy; CAL = cal; PREVIEW = true; $("#login-screen").classList.add("hidden"); $("#app").classList.remove("hidden"); renderOps(); renderCal(); };
 window.__open = openDetail; window.__tab = showTab;
 </script>
 </body>
